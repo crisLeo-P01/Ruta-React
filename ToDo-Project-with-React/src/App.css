@@ -1,4 +1,10 @@
-#root {
-  background: linear-gradient(226deg, #5757EA 0%, rgba(255, 201, 110, 0.77) 100%);
-  height: 100vh;
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+.container-boby-main {
+  display: flex;
+  justify-content: space-between;
 }

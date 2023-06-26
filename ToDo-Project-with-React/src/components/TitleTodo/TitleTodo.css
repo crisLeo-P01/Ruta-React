@@ -1,0 +1,9 @@
+.block-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.block-container .title-main {
+  font-size: 32px;
+  color: #FFF;
+}

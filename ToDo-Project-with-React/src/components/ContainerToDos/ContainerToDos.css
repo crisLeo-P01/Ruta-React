@@ -1,0 +1,13 @@
+.container-todos {
+  background-color: red;
+  width: 526px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 0;
+  text-align: center;
+}
+.container-todos .title-todos {
+  font-size: 48px;
+  color: #FFF;
+  line-height: 0;
+}
