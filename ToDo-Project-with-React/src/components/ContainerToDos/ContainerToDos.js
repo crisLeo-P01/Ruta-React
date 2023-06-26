@@ -3,7 +3,6 @@ import { TodoCounter } from '../TodoCounter/TodoCounter';
 import { TodoSearch } from '../TodoSearch/TodoSearch';
 import { TodoList } from '../TodoList/TodoList';
 import { TodoItem } from '../TodoItem/TodoItem';
-import { CreateTodoButton } from '../CreateTodoButton/CreateTodoButton';
 
 import './ContainerToDos.css';
 
@@ -31,8 +30,6 @@ function ContainerToDos() {
             />
           ))}
         </TodoList>
-
-        <CreateTodoButton/>
       </div>
     </>
   )

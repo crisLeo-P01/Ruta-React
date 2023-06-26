@@ -7,7 +7,7 @@ function TitleTodo() {
   return(
     <>
       <div className="block-container">
-        <img src={ hand } alt={ 'saludar' } width={ 30 } />
+        <img src={ hand } alt={ 'saludar' } width={ 50 } />
         <h1 className="title-main">Hi, Cristian</h1>
       </div>
     </>
