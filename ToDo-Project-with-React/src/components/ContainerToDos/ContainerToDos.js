@@ -17,7 +17,7 @@ function ContainerToDos() {
   return(
     <>
       <div className='container-todos'>
-        <h1 className='title-todos'>Your task</h1>
+        <h1 className='title-todos'>Your tasks</h1>
         <TodoCounter completed={ 5 } total={ 9 }/>
         <TodoSearch />
 

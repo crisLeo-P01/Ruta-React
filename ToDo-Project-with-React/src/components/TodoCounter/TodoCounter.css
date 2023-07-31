@@ -3,4 +3,8 @@
   font-size: 16px;
   color: #FFF;
   margin: 0;
+  font-weight: 300;
+}
+.task-completed span {
+  font-weight: 500;
 }
