@@ -2,12 +2,14 @@
     display: flex;
 }
 .Input-todo-search {
+    font-family: 'Rubik';
+    font-size: 16px;
     background-color: #D9D9D9;
     color: #4B4B4B;
     border: none;
     border-radius: 8px 0 0 8px;
     height: 31px;
-    padding: 0 8px;
+    padding: 0 0 0 18px;
     outline: none;
 }
 .btn-search {
@@ -15,5 +17,5 @@
     height: 31px;
     border-radius: 0 8px 8px 0;
     box-shadow: none;
-    padding: 0 8px 0 0;
+    padding: 0 18px 0 0;
 }
