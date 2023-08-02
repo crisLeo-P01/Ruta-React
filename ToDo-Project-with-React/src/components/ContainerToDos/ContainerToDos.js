@@ -9,17 +9,30 @@ import './ContainerToDos.css';
 const defaultTodos = [
     { text: 'Cortar cebolla', completed: true },
     { text: 'Tomar curso de React.js', completed: false },
-    { text: 'Mirar el partido del Manchester United', completed: false },
+    { text: 'Mirar el partido del Manchester United', completed: true },
     { text: 'Llamar a la clínica', completed: false },
 ];
 
 function ContainerToDos() {
+  const [todos, setTodos] = React.useState(defaultTodos);
+  const [searchValue, setSearchValue] = React.useState('');
+  console.log('Los usuario buscan todos de ' + searchValue);
+
+  const completedTodos = todos.filter(todo => todo.completed).length;
+  const totalTodos = todos.length;
+
   return(
     <>
       <div className='container-todos'>
         <h1 className='title-todos'>Your tasks</h1>
-        <TodoCounter completed={ 5 } total={ 9 }/>
-        <TodoSearch />
+        <TodoCounter 
+          completed={ completedTodos }
+          total={ totalTodos }
+        />
+        <TodoSearch 
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+        />
 
         <TodoList>
           { defaultTodos.map( todo => (
