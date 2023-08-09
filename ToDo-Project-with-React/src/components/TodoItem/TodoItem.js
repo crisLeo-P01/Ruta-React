@@ -6,10 +6,8 @@ import edit from "../../images/icons/ico-edit.svg";
 
 function TodoItem(props) {
   return (
-    <li className="TodoItem TodoItem--complete">
-      <button
-        className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
-      >
+    <li className={`TodoItem ${props.completed && "TodoItem--complete"}`}>
+      <button className={`Icon Icon-check ${props.completed && "Icon-check--active"}`} onClick={props.onComplete}>
         <img src={check} alt={check} />
       </button>
       <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>
@@ -19,7 +17,7 @@ function TodoItem(props) {
         <button className="Icon Icon-edit">
           <img src={edit} alt={edit} />
         </button>
-        <button className="Icon Icon-delete">
+        <button className="Icon Icon-delete" onClick={props.onDelete}>
           <img src={trash} alt={trash} />
         </button>
       </div>
