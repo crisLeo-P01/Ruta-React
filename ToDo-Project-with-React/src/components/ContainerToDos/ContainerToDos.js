@@ -7,10 +7,10 @@ import { TodoItem } from '../TodoItem/TodoItem';
 import './ContainerToDos.css';
 
 const defaultTodos = [
-    { text: 'Cortar cebolla', completed: true },
-    { text: 'Tomar curso de React.js', completed: false },
-    { text: 'Mirar el partido del Manchester United', completed: true },
-    { text: 'Llamar a la clínica', completed: false },
+  { text: 'Cortar cebolla', completed: true },
+  { text: 'Tomar curso de React.js', completed: false },
+  { text: 'Mirar el partido del Manchester United', completed: true },
+  { text: 'Llamar a la clínica', completed: false },
 ];
 
 function ContainerToDos() {
@@ -42,25 +42,25 @@ function ContainerToDos() {
   }
 
 
-  return(
+  return (
     <>
       <div className='container-todos'>
         <h1 className='title-todos'>Your tasks</h1>
-        <TodoCounter 
-          completed={ completedTodos }
-          total={ totalTodos }
+        <TodoCounter
+          completed={completedTodos}
+          total={totalTodos}
         />
-        <TodoSearch 
+        <TodoSearch
           searchValue={searchValue}
           setSearchValue={setSearchValue}
         />
 
         <TodoList>
-          { searchedTodos.map( todo => (
+          {searchedTodos.map(todo => (
             <TodoItem
-              key = { todo.text}
-              text = { todo.text }
-              completed = { todo.completed }
+              key={todo.text}
+              text={todo.text}
+              completed={todo.completed}
               onComplete={() => completeTodo(todo.text)}
               onDelete={() => deleteTodo(todo.text)}
             />
