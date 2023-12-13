@@ -11,7 +11,7 @@ function TodoSearch({
     <div className="Container-input-search">
       <input
         className="Input-todo-search"
-        placeholder="Cortar cebolla"
+        placeholder="Escribe aquí tu tarea"
         value={searchValue}
         onChange={(event) => {
           setSearchValue(event.target.value)
